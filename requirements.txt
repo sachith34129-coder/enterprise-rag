@@ -1,0 +1,7 @@
+langchain-core # for loader
+langchain-text-splitters # for chunker
+langchain-huggingface # for embeder 
+sentence-transformers # embed
+langchain-chroma # for vector db
+langchain-groq #llm
+rank-bm25 #keyword search
