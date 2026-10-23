@@ -8,7 +8,11 @@ from langchain_core.language_models import BaseChatModel
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.retrievers import BaseRetriever
 
-from rag.prompts import RAG_PROMPT, format_context
+from langchain_chroma import Chroma
+
+from rag.prompts import CHAT_PROMPT, RAG_PROMPT, format_context
+from rag.retrievers.factory import get_retriever
+from rag.router import QueryRouter
 
 
 class RAGPipeline:
@@ -32,6 +36,34 @@ class RAGPipeline:
             for chunk in chunks
         ]
         return {"answer": answer, "sources": sources}
+
+class RoutedRAGPipeline:
+    """Routes each question to the best strategy, then runs a normal RAGPipeline."""
+
+    def __init__(self, vector_store: Chroma, llm: BaseChatModel, router: QueryRouter):
+        self.vector_store = vector_store
+        self.llm = llm
+        self.router = router
+        self.chat_chain = CHAT_PROMPT | llm | StrOutputParser()
+        self.pipelines = {}   # strategy name -> RAGPipeline, created on first use
+
+    def get_pipeline(self, strategy: str) -> RAGPipeline:
+        if strategy not in self.pipelines:
+            retriever = get_retriever(strategy, self.vector_store, llm=self.llm)
+            self.pipelines[strategy] = RAGPipeline(retriever=retriever, llm=self.llm)
+        return self.pipelines[strategy]
+
+    def ask(self, question: str) -> dict:
+        route = self.router.route(question)
+
+        if route["strategy"] == "none":
+            answer = self.chat_chain.invoke({"question": question})
+            result = {"answer": answer, "sources": []}
+        else:
+            result = self.get_pipeline(route["strategy"]).ask(question)
+
+        result["route"] = route
+        return result
 
 
 if __name__ == "__main__":

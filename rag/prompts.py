@@ -26,6 +26,39 @@ RAG_PROMPT = ChatPromptTemplate.from_messages([
     ("human", USER_PROMPT),
 ])
 
+HYDE_PROMPT = ChatPromptTemplate.from_messages([
+    ("system", "Write a short passage (3-4 sentences) that answers the question as if it "
+               "came from a company employee handbook. If you don't know the facts, make up "
+               "plausible details. Write only the passage, nothing else."),
+    ("human", "{question}"),
+])
+
+FUSION_PROMPT = ChatPromptTemplate.from_messages([
+    ("system", "You generate alternative search queries. Rewrite the user's question in "
+               "{num_queries} different ways, using different words and phrasings but keeping "
+               "the same meaning. Return one query per line, with no numbering, bullets, "
+               "or extra text."),
+    ("human", "{question}"),
+])
+
+ROUTER_PROMPT = ChatPromptTemplate.from_messages([
+    ("system", """You classify employee questions for a company handbook assistant.
+Reply with exactly ONE of these category names and nothing else:
+
+EXACT   - mentions a specific term, acronym, name or code (e.g. "What is EOS?", "When are Heartbeats due?")
+FACTUAL - a clear, specific question about a policy (e.g. "How long is the sabbatical?")
+VAGUE   - casual, short or unclear wording (e.g. "gym stuff?", "what if I quit")
+BROAD   - wide or multi-part, needs info from several places (e.g. "What benefits do employees get?")
+CHAT    - greetings or small talk that needs no documents (e.g. "hi", "thanks!")"""),
+    ("human", "{question}"),
+])
+
+CHAT_PROMPT = ChatPromptTemplate.from_messages([
+    ("system", "You are a friendly assistant for the company handbook. Reply briefly, "
+               "and invite the user to ask about company policies."),
+    ("human", "{question}"),
+])
+
 
 def format_context(chunks: list[Document]) -> str:
     """Join chunks into one block of text, each labelled with its source file."""

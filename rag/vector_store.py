@@ -46,7 +46,6 @@ def load_vector_store(embedding_model: Embeddings) -> Chroma:
         persist_directory=PERSIST_DIR,
     )
 
-#optiming part skip for now
 
 def get_all_chunks(vector_store: Chroma) -> list[Document]:
     """Read every stored chunk back out of Chroma (used by keyword search)."""
