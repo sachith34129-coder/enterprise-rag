@@ -1,0 +1,21 @@
+question,type,answer,seconds,refusal_ok,context_relevance,faithfulness,answer_relevance,completeness,citation_hit,strategy
+What is EOS?,EXACT,"EOS stands for “Everyone on Support,” a practice where all employees periodically take on Customer Support shifts to interact directly with customers.",0.6,1,0.0,0.0,0.0,0.0,1.0,hybrid
+When are Heartbeats due?,EXACT,Heartbeats are due on the first Friday of the cooldown period.,0.47,1,0.0,0.0,0.0,0.0,1.0,hybrid
+How long is the cooldown period between cycles?,FACTUAL,The cooldown period between cycles lasts two weeks.,0.45,1,0.0,0.0,0.0,0.0,1.0,hybrid
+"How often can employees take a sabbatical, and how long is it?",FACTUAL,"Employees may take a paid sabbatical once every three years, and it lasts for six weeks.",0.5,1,0.0,0.0,0.0,0.0,1.0,hybrid
+How much parental leave does a primary caregiver get?,FACTUAL,A primary caregiver can take up to 16 weeks of parental leave at 100 % pay.,0.98,1,0.0,0.0,0.0,0.0,1.0,hybrid
+what happens if I get let go?,VAGUE,"If you are let go, your benefits end the month of your separation date, and you may be eligible for continued coverage afterward through COBRA.",0.94,1,0.0,0.0,0.0,0.0,0.0,hybrid
+can I do freelance stuff on the side?,VAGUE,"Yes—you may take on freelance work on the side as long as it’s occasional (a few hours a week), doesn’t conflict with 37signals’ interests, and doesn’t affect your performance or require extensive time away from work.",0.91,1,0.0,0.0,0.0,0.0,1.0,hybrid
+do I get money for my home office?,VAGUE,"Yes. During your first year you can expense up to $3,000 for a new desk, chair, computer accessories, or other office furniture for your home office.",0.86,1,0.0,0.0,0.0,0.0,1.0,hybrid
+What kinds of leave and time off can employees take?,BROAD,"Employees can take several types of leave and time off:
+
+- **General time off** – You arrange it directly with your manager and team to ensure coverage; there is no formal request process. This includes planned absences such as sabbaticals or long vacations.  
+- **Summer Hours** – From May 1 through August 31 the company works a 4‑day work week. If a holiday falls during this period you may take the holiday off or use your regular summer day off; any extra days count as vacation.  
+- **Bereavement Leave** – Paid time off is available when you lose a loved one, to handle arrangements, settle affairs, and attend services. Notify your manager as soon as possible.  
+- **Family Leave** – The handbook mentions family leave, though specific details are not provided here.  
+- **Make‑up time for off‑hours work** – If you work outside normal hours for on‑call, maintenance, or emergencies, you can use discretion to take time off later to compensate.  
+
+These are the leave and time‑off options described in the handbook.",1.29,1,0.0,0.0,0.0,0.0,1.0,hybrid
+What happens at company meet-ups?,BROAD,"Company meet‑ups are week‑long events held twice a year in a different city. Most people arrive on Sunday, then meet Monday through Thursday and travel home on Friday. The schedule includes an All‑Hands session on Monday morning, lightning talks, peer‑appreciation moments, occasional outside speakers, and loosely structured time for team breakout huddles, coffee breaks, city exploration, and manager‑employee 1:1s. Lodging, meeting space, agenda and social outings are planned for you; you only need to book your flights.",1.24,1,0.0,0.0,0.0,0.0,1.0,hybrid
+What is the office dress code?,UNANSWERABLE,I couldn't find that in the handbook.,0.58,1,,,,,,hybrid
+Does the company reimburse gym memberships?,UNANSWERABLE,I couldn't find that in the handbook.,0.62,1,,,,,,hybrid

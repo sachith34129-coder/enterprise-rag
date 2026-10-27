@@ -1,0 +1,19 @@
+question,type,answer,seconds,refusal_ok,context_relevance,faithfulness,answer_relevance,completeness,citation_hit,strategy
+What is EOS?,EXACT,"EOS stands for **Everyone on Support**. It’s a program where all employees periodically take Customer Support shifts, directly interacting with customers to help identify product issues and successes.",1.82,1,0.0,0.0,0.0,0.0,1.0,hyde
+When are Heartbeats due?,EXACT,Heartbeats are due on the first Friday of the cooldown period.,1.75,1,0.0,0.0,0.0,0.0,1.0,hyde
+How long is the cooldown period between cycles?,FACTUAL,The cooldown period between cycles lasts two weeks.,1.67,1,0.0,0.0,0.0,0.0,1.0,hyde
+"How often can employees take a sabbatical, and how long is it?",FACTUAL,"Employees may take a paid sabbatical once every three years, and it lasts for six weeks.",1.65,1,0.0,0.0,0.0,0.0,1.0,hyde
+How much parental leave does a primary caregiver get?,FACTUAL,A primary caregiver can take up to 16 weeks of parental leave at 100 % pay.,1.68,1,0.0,0.0,0.0,0.0,1.0,hyde
+what happens if I get let go?,VAGUE,"If you’re let go, you may receive a severance package. If you’ve been with 37signals for less than 1 year, you get a lump‑sum payment equal to 4 weeks of pay. If you’ve been there for more than 1 year, you get the 4‑week base plus 2 additional weeks for each year of service, up to a maximum of 4 months of pay. You’ll also be eligible for continued health‑coverage under COBRA for the month of your separation, and any earned sabbatical days from the past 12 months can be paid out in cash.",2.63,1,0.0,0.0,0.0,0.0,1.0,hyde
+can I do freelance stuff on the side?,VAGUE,"Yes—you may do freelance work on the side as long as it’s unrelated to 37signals, limited to a few hours a week, doesn’t affect your performance, and doesn’t create a conflict of interest or involve aggressive self‑promotion.",1.8,1,0.0,0.0,0.0,0.0,1.0,hyde
+do I get money for my home office?,VAGUE,"Yes. During your first year at 37signals you can expense up to $3,000 for a new desk, chair, computer accessories, or other office furniture for your home office.",1.79,1,0.0,0.0,0.0,0.0,1.0,hyde
+What kinds of leave and time off can employees take?,BROAD,"Employees can take several types of leave and time off:
+
+- **Paid sick time** – notify your manager when you’re ill; no bank of days is tracked.  
+- **Sabbatical** – every three years you may take a 6‑week paid sabbatical, with advance notice.  
+- **Summer hours** – a 4‑day work week from May 1 through August 31 (subject to training eligibility).  
+- **Scheduled time off** – arrange any vacation, long‑term or other absence with your manager and team.  
+- **Family leave** – available as a separate category of leave (details are in the handbook).",2.11,1,0.0,0.0,0.0,0.0,1.0,hyde
+What happens at company meet-ups?,BROAD,"Company meet‑ups are week‑long events held twice a year in a different city. Most people arrive on Sunday, meet together Monday through Thursday, and travel home on Friday. The schedule includes an All‑Hands session on Monday morning, lightning talks, peer‑appreciation moments, and occasional outside speakers or trainers. Beyond those talks, the meet‑up is loosely structured: teams break out for strategy sessions, groups grab coffee or explore the city, and managers hold 1:1s with employees. Lodging, meeting space, agenda and social outings are planned in advance; you only need to book your flight. Everyone is expected to attend, though missing a day is allowed for unavoidable engagements.",1.93,1,0.0,0.0,0.0,0.0,1.0,hyde
+What is the office dress code?,UNANSWERABLE,I couldn't find that in the handbook.,1.84,1,,,,,,hyde
+Does the company reimburse gym memberships?,UNANSWERABLE,I couldn't find that in the handbook.,1.77,1,,,,,,hyde

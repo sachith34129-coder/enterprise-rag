@@ -1,0 +1,25 @@
+question,type,answer,seconds,refusal_ok,context_relevance,faithfulness,answer_relevance,completeness,citation_hit,strategy
+What is EOS?,EXACT,"EOS stands for “Everyone on Support,” a practice where all employees periodically take Customer Support shifts to interact directly with customers.",1.4,1,0.0,0.0,0.0,0.0,1.0,fusion
+When are Heartbeats due?,EXACT,Heartbeats are due on the first Friday of the cooldown period.,1.57,1,0.0,0.0,0.0,0.0,1.0,fusion
+How long is the cooldown period between cycles?,FACTUAL,The cooldown period between cycles lasts two weeks.,1.64,1,0.0,0.0,0.0,0.0,1.0,fusion
+"How often can employees take a sabbatical, and how long is it?",FACTUAL,"Employees may take a paid sabbatical once every three years, and it lasts for six weeks.",1.78,1,0.0,0.0,0.0,0.0,1.0,fusion
+How much parental leave does a primary caregiver get?,FACTUAL,A primary caregiver can take up to 16 weeks of parental leave at 100 % pay.,1.58,1,0.0,0.0,0.0,0.0,1.0,fusion
+what happens if I get let go?,VAGUE,"If you’re let go, you may receive a severance package based on your tenure: 
+
+* Less than 1 year of service → a lump‑sum payment equal to 4 weeks of pay.  
+* More than 1 year of service → an extra 2 weeks of pay for each year you’ve worked, up to a maximum of 4 months of severance.  
+
+You’ll also be paid for any unused PTO at your hourly rate, but you must sign a general release of liabilities and other standard termination terms. If you’re terminated for cause (e.g., misconduct, policy violations, insubordination, or substance abuse while working), you generally won’t be eligible for severance unless management decides otherwise. Note that 37signals does not pay out for unused sick time.",2.05,1,0.0,0.0,0.0,0.0,1.0,fusion
+can I do freelance stuff on the side?,VAGUE,"Yes—you may take on occasional freelance work as long as it’s only a few hours a week, doesn’t conflict with 37signals, and doesn’t affect your performance or require you to work during your regular workday.",1.99,1,0.0,0.0,0.0,0.0,1.0,fusion
+do I get money for my home office?,VAGUE,"Yes. During your first year at 37signals you can expense up to $3,000 for a new desk, chair, computer accessories, or other office furniture for your home office.",1.86,1,0.0,0.0,0.0,0.0,1.0,fusion
+What kinds of leave and time off can employees take?,BROAD,"Employees can take several types of leave and time off:
+
+- **Scheduled time off** – arranged directly with your manager and team to ensure coverage.  
+- **Summer hours** – 4‑day work weeks from May 1 through August 31 (with a training requirement for new hires).  
+- **Paid sick time** – no bank of days; just notify your manager when you’re ill.  
+- **Annual PTO and holidays** – standard vacation and holiday days.  
+- **Sabbatical** – a 6‑week paid sabbatical available every three years, with advance notice.  
+- **Family leave** – listed as a category, though specific details aren’t provided in the handbook.",2.43,1,0.0,0.0,0.0,0.0,1.0,fusion
+What happens at company meet-ups?,BROAD,"Company meet‑ups occur twice a year in a different city. The agenda includes scheduled talks such as an All‑Hands session on Monday morning, lightning talks, peer appreciation, and sometimes outside speakers or trainers. Beyond that the schedule is loosely structured: teams break out for strategy sessions, groups go for coffee or explore the city, and managers hold 1:1 meetings. Lodging, meeting space, the agenda and social outings are all planned in advance; you only need to book your flights.",1.84,1,0.0,0.0,0.0,0.0,1.0,fusion
+What is the office dress code?,UNANSWERABLE,I couldn't find that in the handbook.,1.35,1,,,,,,fusion
+Does the company reimburse gym memberships?,UNANSWERABLE,I couldn't find that in the handbook.,1.44,1,,,,,,fusion

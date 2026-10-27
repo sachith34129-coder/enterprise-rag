@@ -1,0 +1,20 @@
+question,type,answer,seconds,refusal_ok,context_relevance,faithfulness,answer_relevance,completeness,citation_hit,strategy
+What is EOS?,EXACT,"EOS stands for **Everyone on Support**. It’s a practice where every employee periodically takes on customer‑support shifts, talking directly to customers to help identify product issues and successes, with assistance from the Support team via Help Scout.",0.99,1,0.0,0.0,0.0,0.0,1.0,rerank
+When are Heartbeats due?,EXACT,Heartbeats are due on the first Friday of the cooldown period.,0.88,1,0.0,0.0,0.0,0.0,1.0,rerank
+How long is the cooldown period between cycles?,FACTUAL,The cooldown period between cycles lasts two weeks.,0.72,1,0.0,0.0,0.0,0.0,1.0,rerank
+"How often can employees take a sabbatical, and how long is it?",FACTUAL,"Employees may take a paid sabbatical once every three years, and it lasts for six weeks.",1.11,1,0.0,0.0,0.0,0.0,1.0,rerank
+How much parental leave does a primary caregiver get?,FACTUAL,A primary caregiver can take up to 16 weeks of parental leave at 100 % pay.,1.36,1,0.0,0.0,0.0,0.0,1.0,rerank
+what happens if I get let go?,VAGUE,"If you are let go, any unused sick time is not paid out.",0.91,1,0.0,0.0,0.0,0.0,0.0,rerank
+can I do freelance stuff on the side?,VAGUE,"Yes—you may take on occasional freelance work as long as it’s not for a competitor, the time commitment stays at only a few hours a week, you don’t aggressively market it, and it doesn’t interfere with your performance or create a conflict of interest.",1.53,1,0.0,0.0,0.0,0.0,1.0,rerank
+do I get money for my home office?,VAGUE,"Yes. During your first year you can expense up to $3,000 for a new desk, chair, computer accessories, or other office furniture for your home office, and you can replace furniture later with People Ops approval.",1.01,1,0.0,0.0,0.0,0.0,1.0,rerank
+What kinds of leave and time off can employees take?,BROAD,"Employees can take several types of leave and time off:
+
+- **Summer Hours** – a 4‑day work week from May 1 through August 31; you can use a holiday or a regular summer day off, with any extra days counting as vacation.
+- **Vacation days** – used for additional time off beyond summer hours.
+- **Sabbatical** – a paid 6‑week sabbatical available every three years, with advance notice.
+- **Paid sick time** – available for illness (details are in the handbook).
+- **Family leave** – provided for family‑related needs.
+- **Make‑up time** – you may take time off to compensate for extra hours worked on‑call, maintenance, or emergencies.",1.41,1,0.0,0.0,0.0,0.0,1.0,rerank
+What happens at company meet-ups?,BROAD,"Company meet‑ups are week‑long, in‑person gatherings held twice a year in a different city. Most people arrive on Sunday, attend sessions Monday through Thursday, and travel home on Friday. The agenda includes an All‑Hands session on Monday morning, lightning talks, peer‑appreciation moments, breakout‑room strategy sessions, informal coffee breaks or city explorations, and 1‑on‑1 meetings with managers. Lodging, meeting space, agenda and social outings are all planned and communicated in advance; you only need to book your flights. Attendance is expected for everyone, though occasional skips are allowed for unavoidable engagements.",1.29,1,0.0,0.0,0.0,0.0,1.0,rerank
+What is the office dress code?,UNANSWERABLE,I couldn't find that in the handbook.,1.02,1,,,,,,rerank
+Does the company reimburse gym memberships?,UNANSWERABLE,I couldn't find that in the handbook.,0.87,1,,,,,,rerank
