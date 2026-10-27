@@ -59,6 +59,37 @@ CHAT_PROMPT = ChatPromptTemplate.from_messages([
     ("human", "{question}"),
 ])
 
+# ---------- Evaluation (LLM-as-judge) prompts ----------
+
+CONTEXT_RELEVANCE_PROMPT = ChatPromptTemplate.from_messages([
+    ("system", "You are evaluating a search system. Decide whether the CONTEXT contains "
+               "information that helps answer the QUESTION. Reply with only YES or NO."),
+    ("human", "QUESTION:\n{question}\n\nCONTEXT:\n{context}"),
+])
+
+FAITHFULNESS_PROMPT = ChatPromptTemplate.from_messages([
+    ("system", "Decide whether every claim in the ANSWER is supported by the CONTEXT. "
+               "If the ANSWER contains any information that is not in the CONTEXT, reply NO. "
+               "If the ANSWER says the information could not be found, reply YES. "
+               "Reply with only YES or NO."),
+    ("human", "CONTEXT:\n{context}\n\nANSWER:\n{answer}"),
+])
+
+ANSWER_RELEVANCE_PROMPT = ChatPromptTemplate.from_messages([
+    ("system", "Decide whether the ANSWER directly addresses what the QUESTION asks. "
+               "A true statement that does not answer the question counts as NO. "
+               "Reply with only YES or NO."),
+    ("human", "QUESTION:\n{question}\n\nANSWER:\n{answer}"),
+])
+
+COMPLETENESS_PROMPT = ChatPromptTemplate.from_messages([
+    ("system", "Compare the GENERATED ANSWER with the GOLDEN ANSWER (the correct reference). "
+               "Reply YES if the generated answer contains all the key facts from the golden answer "
+               "(different wording is fine, extra correct details are fine). "
+               "Reply NO if any key fact is missing or wrong. Reply with only YES or NO."),
+    ("human", "GOLDEN ANSWER:\n{golden_answer}\n\nGENERATED ANSWER:\n{answer}"),
+])
+
 
 def format_context(chunks: list[Document]) -> str:
     """Join chunks into one block of text, each labelled with its source file."""

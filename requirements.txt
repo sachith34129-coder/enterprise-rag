@@ -5,3 +5,4 @@ sentence-transformers # embed
 langchain-chroma # for vector db
 langchain-groq #llm
 rank-bm25 #keyword search
+pandas

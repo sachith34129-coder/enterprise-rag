@@ -17,7 +17,7 @@ def get_llm(model: str = "openai/gpt-oss-120b", temperature: float = 0.1, max_to
     if not os.getenv("GROQ_API_KEY"):
         raise ValueError("GROQ_API_KEY not found. Add it to your .env file.")
 
-    return ChatGroq(model=model, temperature=temperature, max_tokens=max_tokens)
+    return ChatGroq(model=model, temperature=temperature, max_tokens=max_tokens, max_retries=5)
 
 
 if __name__ == "__main__":

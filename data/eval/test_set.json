@@ -1,0 +1,74 @@
+[
+  {
+    "question": "What is EOS?",
+    "type": "EXACT",
+    "golden_answer": "EOS stands for Everyone on Support. Everyone in the company is encouraged to do periodic customer support shifts, because talking directly to customers shows what is right and wrong with the products.",
+    "source_file": "our-rituals.md"
+  },
+  {
+    "question": "When are Heartbeats due?",
+    "type": "EXACT",
+    "golden_answer": "Heartbeats are due on the first Friday of the cooldown period.",
+    "source_file": "how-we-work.md"
+  },
+  {
+    "question": "How long is the cooldown period between cycles?",
+    "type": "FACTUAL",
+    "golden_answer": "The cooldown period is two weeks, between each 6-week cycle.",
+    "source_file": "how-we-work.md"
+  },
+  {
+    "question": "How often can employees take a sabbatical, and how long is it?",
+    "type": "FACTUAL",
+    "golden_answer": "Every three years, employees may take a 6-week paid sabbatical. They should give their team a heads-up, preferably three months in advance.",
+    "source_file": "benefits-and-perks.md"
+  },
+  {
+    "question": "How much parental leave does a primary caregiver get?",
+    "type": "FACTUAL",
+    "golden_answer": "A primary caregiver can take up to 16 weeks of leave at 100% pay, which must be taken within the first year of the child's birth or placement.",
+    "source_file": "benefits-and-perks.md"
+  },
+  {
+    "question": "what happens if I get let go?",
+    "type": "VAGUE",
+    "golden_answer": "You may get a severance package: 4 weeks of pay if you have been there less than 1 year, plus 2 more weeks of pay for every year of employment after that, up to a maximum of 4 months. It also includes health insurance and pay for unused vacation and sabbatical time. People terminated for cause are usually not eligible.",
+    "source_file": "severance.md"
+  },
+  {
+    "question": "can I do freelance stuff on the side?",
+    "type": "VAGUE",
+    "golden_answer": "Yes, within limits. Occasional side gigs, occasional speaking gigs, or a small side business of a few hours a week are OK. Working for another company in the same industry, consulting where there is a conflict of interest, or anything that pulls attention from work is not OK.",
+    "source_file": "moonlighting.md"
+  },
+  {
+    "question": "do I get money for my home office?",
+    "type": "VAGUE",
+    "golden_answer": "Yes. During your first year you can expense up to $3,000 on a desk, desk chair, computer accessories, or other office furniture.",
+    "source_file": "benefits-and-perks.md"
+  },
+  {
+    "question": "What kinds of leave and time off can employees take?",
+    "type": "BROAD",
+    "golden_answer": "Employees get 20 days of vacation and personal days plus 11 local holidays per year, a 6-week paid sabbatical every three years, paid sick time without a fixed bank of days, family leave (up to 16 weeks at full pay for primary caregivers and 6 weeks for secondary caregivers), and bereavement leave (10 days for immediate family, 3 days for extended family).",
+    "source_file": "benefits-and-perks.md"
+  },
+  {
+    "question": "What happens at company meet-ups?",
+    "type": "BROAD",
+    "golden_answer": "The whole company meets in person twice a year in a different city each time. There are scheduled talks such as the All Hands session on Monday morning, lightning talks, and peer appreciation; the rest is loosely structured, with team strategy sessions, outings, and 1:1s.",
+    "source_file": "our-rituals.md"
+  },
+  {
+    "question": "What is the office dress code?",
+    "type": "UNANSWERABLE",
+    "golden_answer": "I couldn't find that in the handbook.",
+    "source_file": null
+  },
+  {
+    "question": "Does the company reimburse gym memberships?",
+    "type": "UNANSWERABLE",
+    "golden_answer": "I couldn't find that in the handbook.",
+    "source_file": null
+  }
+]
